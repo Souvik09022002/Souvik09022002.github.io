@@ -78,15 +78,22 @@ background-color: #f8f9fa;
   }
   
   .photo {
-    background-color: rgb(195, 243, 243);
     height: 300px;
     width: 300px;
     border: 12px solid rgb(195, 243, 243);
     border-radius: 50%;
     margin: 50px;
-    animation: pulse 1s infinite; /* Adjust the duration and iteration count as needed */
-  }
-  
+    animation: pulse 1s infinite;
+    overflow: hidden; /* Add this line to hide any overflowing content */
+}
+
+.photo img {
+    max-width: 100%; /* Add this line to ensure the image doesn't exceed the width of its container */
+    max-height: 100%; /* Add this line to ensure the image doesn't exceed the height of its container */
+    display: block; /* Add this line to ensure the image behaves as a block element */
+    margin: auto; /* Add this line to center the image horizontally */
+}
+
 .intro{
 border: 10px solid rgb(255, 255, 255);
 border-radius: 10px;
