@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Set a high z-index to ensure it stays on top */
+    background-color: #fffcfc; /* Adjust background color as needed */
+    box-shadow: 0px 0px 5px 6px #f2fdf2;
+}
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.box{
+    /* background-color: red; */
+    font-size: 25px;
+    /* border: 2px solid green; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2px;
+    background-color:#fffcfc ;
+    border-radius: 0px 0px 12px 13px;
+    box-shadow: 0px 0px 35px 36px #cfdbcf;
+  
+}
+ul{
+    background-color: #f8f9fa;
+}
+ul li{
+    list-style: none;
+    display: inline-flex;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  transition-duration: 0.5s;
+  
+}
+ul li:hover{
+   background-color: gray;
+   color: white;
+   cursor: pointer;
+   
+}
+
+.hero{
+    margin-top: 100px;
+width: auto;
+height: 400px;
+background-color: transparent;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+background-color: #f8f9fa;
+}
+@keyframes pulse {
+    0% {
+      border-color: rgb(195, 243, 243);
+    }
+    50% {
+      border-color: rgb(245, 163, 163); /* Change this to the color you want the border to pulse to */
+    }
+    100% {
+      border-color: rgb(33, 241, 241);
+    }
+  }
+  
+  .photo {
+    background-color: rgb(195, 243, 243);
+    height: 300px;
+    width: 300px;
+    border: 12px solid rgb(195, 243, 243);
+    border-radius: 50%;
+    margin: 50px;
+    animation: pulse 1s infinite; /* Adjust the duration and iteration count as needed */
+  }
+  
+.intro{
+border: 10px solid rgb(255, 255, 255);
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+height: 200px;
+width: 400px;
+margin:50px ;
+padding: 20px;
+text-align: center;
+box-shadow: 5px 10px 10px 12px #f39595;
+
+}
+.about{
+display: grid;
+grid-template-columns: auto auto auto auto ;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+column-gap: 50px;
+background-color: rgb(255, 255, 255);
+align-content: center;
+background-color: ;
+}
+.card {
+list-style: none;
+background-color: #fdfdfd;
+box-shadow: 4px 5px 4px 5px #8adfee;
+border-radius: 20px;
+text-align: center;
+height: 250px;
+width: 210px;
+margin: 20px;
+cursor: pointer;
+}
+.card:hover{
+    font-size: larger;
+    box-shadow: 4px 8px 7px 9px #95f5d0;
+
+}
+.card p{
+    padding: 10px;
+   overflow: hidden;
+   margin: 10px;
+   border-radius: 20px;
+   background-color: antiquewhite;
+}
+.card h3{
+    font-size: 30px;
+    height: 50px;
+    background-color: #f7a7a7;
+    border-radius: 20px 20px 0px 0px;
+}
+.project_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: auto auto;
+    height: auto;
+    width: 700px;
+    justify-content: center;
+} 
+@media screen and (max-width:1200px) {
+    .project{
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width:700px) {
+    .project{
+        grid-template-columns: auto;
+    }
+    .pro{
+        width:400px ;
+    }
+}
+.pro{
+    margin: 10px;
+    padding: 20px;
+    /* border: 2px solid red; */
+    width: 600px;
+   box-shadow: 7px 5px 4px 6px #888f88;
+   border-radius: 25px;
+}
+.pro:hover{
+    font-size: larger;
+    box-shadow: 14px 10px 8px 12px #888f88;
+}
+.img1{
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.img2{
+    float: right;
+    border-radius: 20px;
+    margin: 10px;
+}
+.img3{
+    float: left;
+    border-radius: 20px;
+    margin: 10px;
+}
+.img4{
+    float: right;
+    border-radius: 20px;
+    margin: 10px;
+}
+.pro p{
+   margin: 10px;
+}
+.contac{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+    background-color: transparent;
+
+}
+.contac_div{
+    /* border: 2px solid red; */
+    border-radius: 54px;
+    height: auto;
+    width:700px ;
+   justify-self: center;
+   
+}
+.contac_h1{
+    color: blue;
+    text-align: center;
+    margin: 10px;
+    font-size: 3.2rem;
+}
+.mail_box{
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 5px 10px 15px 10px #888f88;
+    width: 500px;
+  
+}
+.mail_box p{
+    padding: 5px;
+}
+.mail_box input{
+    margin-left: 12px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid  #525852;
+    text-align: center;
+}
+.mail_box_message{
+    height: 100px;
+    width: 300px;
+}
+.hover_mail:hover{
+    box-shadow: 2px 2px 4px 5px #888f88;
+}
+.mail_box button{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(10, 161, 231);
+    color: white;
+    font-size: 25px;
+    border-radius: 35px;
+    cursor: pointer;
+    border: transparent;
+}
+.mail_box button:hover{
+    box-shadow: 2px 2px 3px #f8f9fa;
+    background-color: rgb(5, 111, 182);
+}
+.contac_area{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    padding: 20px;
+    justify-content: space-around;
+}
+.contac_area .area_box{
+    padding-left: 50px;
+    float: left;
+    height: 300px;
+    width: 300px;
+}.contac_area .area_frame iframe{
+    float: right;
+    width: 500px;
+    height: 300px;
+}
+.about_me{
+   display: flex;
+   justify-content: center;
+}
+.about_me_one{
+    height: 500px;
+    width: 700px;
+}
+.text1 {
+
+    width: 400px; */
+    float: right;
+    border: 2px solid rgb(250, 249, 255);
+    box-shadow: 15px 10px 20px #f1bbbb;
+    height: 130px;
+    margin-right: 10px; /* Adding margin to create space between .text1 and .text2 */
+    margin: 15px;
+    padding: 20px;
+    border-radius: 5px 22px 23px 45px;
+}
+
+.text2 {
+    /* height: 200px; */
+    box-shadow: 5px 10px 20px #f0a7a7;
+    width: 400px;
+    height: 130px;
+    clear: left;
+    float: right;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 22px 5px 45px 30px;
+  
+}
+.text3 {
+    box-shadow: 5px 10px 20px #ee8484;
+    width: 400px;
+    height: 130px;
+    clear: right;
+    float: left;
+    padding: 20px;
+    border-radius: 5px 22px 23px 45px;
+}
+.activity_area{
+   margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.activity_area .area-1,
+.activity_area .area-2,
+.activity_area .area-3,
+.activity_area .area-4,
+.activity_area .area-5 {
+    text-align: center;
+    padding-top: 100px;
+    margin: 20px;
+    width: 250px; /* Adjust width as needed */
+    height: 250px;
+    align-self: center;
+    background-color: #60f5ab; /* Change this to your desired background color */
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.area-1,
+.area-2,
+.area-3,.area-4,
+.area-5{
+    border:thick double #0c81a5;
+
+}
+.area-1:hover{ background-color: #ee8484; font-size: larger;transition-duration: 0.5s;}
+.area-2:hover{ background-color: #ee8484; font-size: larger;transition-duration: 0.5s;}
+.area-3:hover{ background-color: #ee8484; font-size: larger;transition-duration: 0.5s;}
+.area-4:hover{ background-color: #ee8484; font-size: larger;transition-duration: 0.5s;}
+.area-5:hover{ background-color: #ee8484; font-size: larger;transition-duration: 0.5s;}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: fixed;
+        width: auto;
+        top:0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    ul li {
+        margin: 5px;
+    }
+
+    .hero {
+        margin-top: 300px;
+        height: auto;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+
+    .intro {
+        width: auto;
+        margin: 20px;
+    }
+
+    .about .card {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .project_container {
+        width: 90%;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .pro {
+        width: 100%;
+    }
+
+    .pro p {
+        font-size: 14px;
+    }
+
+    .contac_div {
+        width: 90%;
+    }
+
+    .mail_box {
+        width: 100%;
+    }
+
+    .mail_box input,
+    .mail_box_message {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .contac_area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contac_area .area_box,
+    .contac_area .area_frame iframe {
+        width: 90%;
+    }
+
+    .about_me_one {
+        width: 90%;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        width: 100%;
+    }
+
+    .activity_area .area-1,
+    .activity_area .area-2,
+    .activity_area .area-3,
+    .activity_area .area-4,
+    .activity_area .area-5 {
+        width: 90%;
+    }
+}
+.menu-icon {
+    display: none; /* Hide the menu icon by default */
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .p1 {
+        display: none;
+    }
+    
+    #div1.active .p1 {
+        display: block;
+    }
+    
+}
